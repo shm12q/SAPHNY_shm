@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_shouye"
+        android:enabled="true"
+        android:icon="@drawable/shouye"
+        android:title="首页"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_zhubao"
+        android:enabled="true"
+        android:icon="@drawable/zhubao"
+        android:title="选珠宝"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_zhihuan"
+        android:enabled="true"
+        android:icon="@drawable/zhihuan"
+        android:title="珠宝置换"
+        app:showAsAction="always"
+         />
+    <item
+        android:id="@+id/ic_goumai"
+        android:enabled="true"
+        android:icon="@drawable/goumai"
+        android:title="可购买"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_wode"
+        android:enabled="true"
+        android:icon="@drawable/wode"
+        android:title="我的"
+        app:showAsAction="always" />
+
+</menu>
