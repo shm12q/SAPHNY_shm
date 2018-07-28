@@ -16,7 +16,7 @@ import com.example.shm_msi.saphny_shm.Bean.HomeEntity;
 import com.example.shm_msi.saphny_shm.R;
 import com.example.shm_msi.saphny_shm.Utils.GlideImageLoader;
 import com.example.shm_msi.saphny_shm.View.Adapter.HomeAdapter1;
-import com.example.shm_msi.saphny_shm.View.Adapter.HomeAdapter1_1;
+
 import com.squareup.picasso.Picasso;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;

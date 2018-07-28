@@ -18,6 +18,7 @@ public class HomeEntity implements MultiItemEntity{
     public static final int Home2_ITEM1=21;
     public static final int Home2_ITEM2=22;
     public static final int Home2_ITEM3=23;
+    public static final int Home2_ITEM4=24;
     private int itemtype;
     private String ITEM2_title;
     private List<Integer> images;

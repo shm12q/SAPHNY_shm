@@ -39,6 +39,8 @@ public class HomeAdapter1 extends BaseMultiItemQuickAdapter<HomeEntity,BaseViewH
         addItemType(HomeEntity.ITEM3,R.layout.item_home_1_3);
         addItemType(HomeEntity.ITEM4,R.layout.item_home_1_4);
         addItemType(HomeEntity.ITEM5,R.layout.item_home_1_5);
+
+
         this.context=context;
         this.list1_1=data_1;
     }
@@ -121,7 +123,19 @@ public class HomeAdapter1 extends BaseMultiItemQuickAdapter<HomeEntity,BaseViewH
     }
 
 
+    public class HomeAdapter1_1 extends BaseQuickAdapter<HomeEntity,BaseViewHolder> {
 
+        public HomeAdapter1_1(@LayoutRes int layoutResId, @Nullable List<HomeEntity> data) {
+            super(layoutResId, data);
+        }
+
+        @Override
+        protected void convert(BaseViewHolder helper, HomeEntity item) {
+            helper.setImageResource(R.id.image_home1_1_1,item.getDrawableRes());
+        }
+
+
+    }
 
 }
 

@@ -8,9 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.shm_msi.saphny_shm.Bean.HomeEntity;
 import com.example.shm_msi.saphny_shm.R;
 import com.example.shm_msi.saphny_shm.Utils.GlideImageLoader;
 import com.example.shm_msi.saphny_shm.View.Adapter.HomeAdapter1;
+
+import com.example.shm_msi.saphny_shm.View.Adapter.HomeAdapter2;
 import com.youth.banner.Banner;
 
 import java.util.ArrayList;
@@ -22,7 +25,10 @@ import java.util.List;
 
 public class HomeFragment_2 extends BaseFragment {
     RecyclerView recyclerView;
-    HomeAdapter1 homeAdapter1;
+    List<Integer> images=new ArrayList<>();
+    List<HomeEntity> data2_3=new ArrayList<>();
+    List<HomeEntity> data2_4=new ArrayList<>();
+    List<HomeEntity> data=new ArrayList<>();
 
 
     @Nullable
@@ -39,11 +45,34 @@ public class HomeFragment_2 extends BaseFragment {
 
     }
     private void initlist(){
+        images.add(R.drawable.home2_head1);
+        images.add(R.drawable.home2_head2);
+        images.add(R.drawable.home2_head3);
+        data2_3.add(new HomeEntity(R.drawable.chaoliutuijian1,HomeEntity.Home2_ITEM3));
+        data2_3.add(new HomeEntity(R.drawable.chaoliutuijian2,HomeEntity.Home2_ITEM3));
+        data2_3.add(new HomeEntity(R.drawable.chaoliutuijian3,HomeEntity.Home2_ITEM3));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan1,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan2,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan3,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan4,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan5,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan6,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan7,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan8,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan9,HomeEntity.Home2_ITEM4));
+        data2_4.add(new HomeEntity(R.drawable.pinpaiguan10,HomeEntity.Home2_ITEM4));
+
+        data.add(new HomeEntity(HomeEntity.Home2_ITEM1,"null",images));
+        data.add(new HomeEntity(HomeEntity.Home2_ITEM2));
+        data.add(new HomeEntity(HomeEntity.Home2_ITEM3));
+        data.add(new HomeEntity(HomeEntity.Home2_ITEM4));
+
 
     }
     private void initRecyclerView(View view){
         recyclerView=view.findViewById(R.id.recyclerview_home_2);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(new HomeAdapter2(data,getActivity(),data2_3,data2_4));
 
     }
 }
