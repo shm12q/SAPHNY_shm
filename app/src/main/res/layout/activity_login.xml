@@ -4,8 +4,8 @@
   android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shm_msi.saphny_shm.View.LoginActivity">
     <LinearLayout
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入密码"
-        android:drawableLeft="@drawable/mima"
+        android:drawableStart="@drawable/mima"
         android:id="@+id/et_mima"
         android:layout_below="@+id/et_login"
         android:layout_alignParentLeft="true"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_login"
-        android:drawableLeft="@drawable/login"
+        android:drawableStart="@drawable/login"
         android:hint="请输入用户名"
         android:layout_marginTop="24dp"
         android:layout_below="@+id/linearLayout"
