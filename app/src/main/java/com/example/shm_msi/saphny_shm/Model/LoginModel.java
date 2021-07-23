@@ -11,15 +11,16 @@ import okhttp3.Request;
 public class LoginModel {
 
 
-    OkHttpClient okHttpClient = new OkHttpClient();
-    Request request;
-    public LoginModel(){
+  OkHttpClient okHttpClient = new OkHttpClient();
+  Request request;
 
-        String url = "http://localhost/login.php";
-        request = new Request.Builder()
-                .url(url)
-                .get()//默认就是GET请求，可以不写
-                .build();
-    }
+  public LoginModel() {
+
+    String url = "http://localhost/login.php";
+    request = new Request.Builder()
+        .url(url)
+        .get()//默认就是GET请求，可以不写
+        .build();
+  }
 
 }

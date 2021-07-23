@@ -1,56 +1,46 @@
 package com.example.shm_msi.saphny_shm.View;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.shm_msi.saphny_shm.R;
 
-import java.io.IOException;
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+  private Button bt_login, bt_register;
+  private EditText et_login, et_mima;
 
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+    setContentView(R.layout.activity_login);
+    init();
+  }
 
-public class LoginActivity extends AppCompatActivity  implements View.OnClickListener{
-    private Button bt_login,bt_register;
-    private EditText et_login,et_mima;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_login);
-        init();
-    }
-    private void init() {
-        bt_login = (Button)findViewById(R.id.bt_login);
-        bt_register = (Button)findViewById(R.id.bt_register);
-        et_login = (EditText)findViewById(R.id.et_login);
-        et_mima = (EditText)findViewById(R.id.et_mima);
-        bt_login.setOnClickListener(this);
-        bt_register.setOnClickListener(this);
-    }
+  private void init() {
+    bt_login = (Button) findViewById(R.id.bt_login);
+    bt_register = (Button) findViewById(R.id.bt_register);
+    et_login = (EditText) findViewById(R.id.et_login);
+    et_mima = (EditText) findViewById(R.id.et_mima);
+    bt_login.setOnClickListener(this);
+    bt_register.setOnClickListener(this);
+  }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.bt_register:
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.bt_login:
-                Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent1);
+  @Override
+  public void onClick(View view) {
+    switch (view.getId()) {
+      case R.id.bt_register:
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(intent);
+        break;
+      case R.id.bt_login:
+        Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent1);
 //                MediaType mediaType = MediaType.parse("text/x-markdown; charset=utf-8");
 //                RequestBody body=new FormBody.Builder()
 //                        .add("userid", "hys")
@@ -67,7 +57,8 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
 //                        runOnUiThread(new Runnable() {
 //                            @Override
 //                            public void run() {
-//                                Toast.makeText(LoginActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(LoginActivity.this,"请求失败",Toast.LENGTH_SHORT)
+//                                .show();
 //                            }
 //                        });
 //
@@ -79,8 +70,10 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
 //                            runOnUiThread(new Runnable() {
 //                                @Override
 //                                public void run() {
-//                                    Toast.makeText(LoginActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
-//                                    Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
+//                                    Toast.makeText(LoginActivity.this,"登陆成功",Toast
+//                                    .LENGTH_SHORT).show();
+//                                    Intent intent1=new Intent(LoginActivity.this,MainActivity
+//                                    .class);
 //                                    startActivity(intent1);
 //                                }
 //                            });
@@ -89,7 +82,8 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
 //                            runOnUiThread(new Runnable() {
 //                                @Override
 //                                public void run() {
-//                                    Toast.makeText(LoginActivity.this,"登陆失败",Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(LoginActivity.this,"登陆失败",Toast
+//                                    .LENGTH_SHORT).show();
 //                                }
 //                            });
 //                        }
@@ -97,7 +91,6 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
 //                });
 
 
-
-        }
     }
+  }
 }

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="horizontal"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="#fff">
+
+  <ImageView
+    android:id="@+id/image_home1_1_1"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
-    android:background="#fff">
-    <ImageView
-        android:id="@+id/image_home1_1_1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/xinshouzhinan"
-        android:adjustViewBounds="true"
-        android:layout_margin="10dp"/>
+    app:srcCompat="@drawable/xinshouzhinan"
+    android:adjustViewBounds="true"
+    android:layout_margin="10dp" />
 </LinearLayout>

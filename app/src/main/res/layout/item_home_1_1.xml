@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/image_home1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/home_1_1"
+    android:adjustViewBounds="true" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerview_home_1_1"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/image_home1_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/home_1_1"
-        android:adjustViewBounds="true"
-        />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_home_1_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </androidx.recyclerview.widget.RecyclerView>
+  </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

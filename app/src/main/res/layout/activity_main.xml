@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:layout_height="match_parent"
 
-    tools:context="com.example.shm_msi.saphny_shm.View.MainActivity">
+  tools:context="com.example.shm_msi.saphny_shm.View.MainActivity">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_nv"
-        >
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom_nv">
 
-    </androidx.viewpager.widget.ViewPager>
+  </androidx.viewpager.widget.ViewPager>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nv"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconTint="@drawable/sel_bottom_navi_bar"
-        app:itemTextColor="@drawable/sel_bottom_navi_bar"
-        app:itemBackground="@color/navigationBarColor"
-        app:menu="@menu/menu_main">
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_nv"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:itemIconTint="@drawable/sel_bottom_navi_bar"
+    app:itemTextColor="@drawable/sel_bottom_navi_bar"
+    app:itemBackground="@color/navigationBarColor"
+    app:menu="@menu/menu_main">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+  </com.google.android.material.bottomnavigation.BottomNavigationView>
 </RelativeLayout>
