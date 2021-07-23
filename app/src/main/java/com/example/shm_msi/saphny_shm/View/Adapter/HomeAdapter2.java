@@ -1,30 +1,28 @@
 package com.example.shm_msi.saphny_shm.View.Adapter;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.example.shm_msi.saphny_shm.Bean.HomeEntity;
 import com.example.shm_msi.saphny_shm.R;
 import com.example.shm_msi.saphny_shm.Utils.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by SHM-MSI on 2018/7/22.
  */
 
-public class HomeAdapter2 extends BaseMultiItemQuickAdapter<HomeEntity,BaseViewHolder>{
+public class HomeAdapter2 extends BaseMultiItemQuickAdapter<HomeEntity, BaseViewHolder> {
     private Context context;
     private List<HomeEntity> list2_3;
     private List<HomeEntity> list2_4;

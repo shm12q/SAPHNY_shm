@@ -1,7 +1,7 @@
 package com.example.shm_msi.saphny_shm.View;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by SHM-MSI on 2018/7/17.

@@ -1,11 +1,12 @@
 package com.example.shm_msi.saphny_shm.View;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.MenuItem;
 
 import com.example.shm_msi.saphny_shm.R;
@@ -14,7 +15,7 @@ import com.example.shm_msi.saphny_shm.Utils.BottomNavigationViewHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private FragmentPagerAdapter fragmentPagerAdapter;
 

@@ -1,7 +1,7 @@
 package com.example.shm_msi.saphny_shm.View;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;

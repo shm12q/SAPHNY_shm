@@ -9,16 +9,16 @@
 
     tools:context="com.example.shm_msi.saphny_shm.View.MainActivity">
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_nv"
         >
 
-    </android.support.v4.view.ViewPager>
+    </androidx.viewpager.widget.ViewPager>
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nv"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
@@ -28,5 +28,5 @@
         app:itemBackground="@color/navigationBarColor"
         app:menu="@menu/menu_main">
 
-    </android.support.design.widget.BottomNavigationView>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </RelativeLayout>

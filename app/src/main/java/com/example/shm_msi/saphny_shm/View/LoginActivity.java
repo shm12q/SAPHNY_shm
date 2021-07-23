@@ -1,9 +1,8 @@
 package com.example.shm_msi.saphny_shm.View;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -17,7 +16,6 @@ import java.io.IOException;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
-import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -51,50 +49,52 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.bt_login:
-                MediaType mediaType = MediaType.parse("text/x-markdown; charset=utf-8");
-                RequestBody body=new FormBody.Builder()
-                        .add("userid", "hys")
-                        .add("password", "123456")
-                        .build();
-                Request request = new Request.Builder()
-                        .url("http://localhost/.php")
-                        .post(body)
-                        .build();
-                OkHttpClient okHttpClient = new OkHttpClient();
-                okHttpClient.newCall(request).enqueue(new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(LoginActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
-                            }
-                        });
-
-                    }
-
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        if(response.body().toString().equals("1")){
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Toast.makeText(LoginActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
-                                    Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
-                                    startActivity(intent1);
-                                }
-                            });
-                        }
-                        else{
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Toast.makeText(LoginActivity.this,"登陆失败",Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    }
-                });
+                Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent1);
+//                MediaType mediaType = MediaType.parse("text/x-markdown; charset=utf-8");
+//                RequestBody body=new FormBody.Builder()
+//                        .add("userid", "hys")
+//                        .add("password", "123456")
+//                        .build();
+//                Request request = new Request.Builder()
+//                        .url("http://localhost/.php")
+//                        .post(body)
+//                        .build();
+//                OkHttpClient okHttpClient = new OkHttpClient();
+//                okHttpClient.newCall(request).enqueue(new Callback() {
+//                    @Override
+//                    public void onFailure(Call call, IOException e) {
+//                        runOnUiThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                Toast.makeText(LoginActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+//                            }
+//                        });
+//
+//                    }
+//
+//                    @Override
+//                    public void onResponse(Call call, Response response) throws IOException {
+//                        if(response.body().toString().equals("1")){
+//                            runOnUiThread(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    Toast.makeText(LoginActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
+//                                    Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
+//                                    startActivity(intent1);
+//                                }
+//                            });
+//                        }
+//                        else{
+//                            runOnUiThread(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    Toast.makeText(LoginActivity.this,"登陆失败",Toast.LENGTH_SHORT).show();
+//                                }
+//                            });
+//                        }
+//                    }
+//                });
 
 
 
