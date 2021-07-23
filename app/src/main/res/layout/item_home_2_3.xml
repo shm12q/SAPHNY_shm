@@ -16,8 +16,7 @@
         android:layout_marginRight="15dp"
         >
         <TextView
-            android:id="@+id/text_home2_3_titile"
-            android:layout_width="wrap_content"
+          android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="潮流推荐"
             android:textStyle="bold"
@@ -28,8 +27,7 @@
             android:layout_weight="1"></View>
 
         <TextView
-            android:id="@+id/text_home2_3_more"
-            android:layout_width="wrap_content"
+          android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text=">"

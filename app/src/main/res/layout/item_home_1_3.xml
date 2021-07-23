@@ -11,8 +11,7 @@
         android:src="@drawable/jingzhishenghuo"
         android:adjustViewBounds="true"/>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_home1_3"
-        android:layout_width="match_parent"
+      android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -22,8 +21,7 @@
         android:orientation="vertical"
         android:background="#fff">
         <Button
-            android:id="@+id/bt_home1_3"
-            android:layout_width="wrap_content"
+          android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="更多"
             android:background="@null"

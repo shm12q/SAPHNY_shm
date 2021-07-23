@@ -15,8 +15,7 @@
         android:layout_marginRight="15dp"
         >
         <TextView
-            android:id="@+id/text_home2_2_titile"
-            android:layout_width="wrap_content"
+          android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="人气品牌"
             android:textStyle="bold"
